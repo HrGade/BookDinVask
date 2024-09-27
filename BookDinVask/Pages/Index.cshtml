@@ -5,6 +5,33 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>Book tidrum og maskine</h1>
+    <form method="post">
+        <label for="machine">Vælg maskine:</label>
+        <select id="machine" name="machine">
+            <option value="vaskemaskine1">Vaskemaskine 1</option>
+            <option value="vaskemaskine2">Vaskemaskine 2</option>
+            <option value="vaskemaskine3">Vaskemaskine 3</option>
+            <option value="tørretumbler1">Tørretumbler 1</option>
+            <option value="tørretumbler2">Tørretumbler 2</option>
+            <option value="rullemaskine">Rullemaskine</option>
+        </select>
+
+        <label for="date">Vælg dato:</label>
+        <input type="date" id="date" name="date" required />
+
+       
+        <label for="timeslot">Vælg tidsrum:</label>
+        <select id="timeslot" name="timeslot">
+            <option value="08:00-10:00">08:00-10:00</option>
+            <option value="10:00-12:00">10:00-12:00</option>
+            <option value="12:00-14:00">12:00-14:00</option>
+            <option value="14:00-16:00">14:00-16:00</option>
+            <option value="16:00-18:00">16:00-18:00</option>
+            <option value="18:00-20:00">18:00-20:00</option>
+            <option value="20:00-22:00">20:00-22:00</option>
+        </select>
+        
+        <button type="submit">Book tid</button>
+    </form>
 </div>
