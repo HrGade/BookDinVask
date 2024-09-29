@@ -1,0 +1,23 @@
+﻿@page
+@model BookDinVask.Pages.CreateBeboerModel
+
+<h2>Opret ny beboer</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="Beboer.Navn"></label>
+        <input asp-for="Beboer.Navn" class="form-control" />
+        <span asp-validation-for="Beboer.Navn" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Beboer.Lejlighed"></label>
+        <input asp-for="Beboer.Lejlighed" class="form-control" />
+        <span asp-validation-for="Beboer.Lejlighed" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Opret beboer</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

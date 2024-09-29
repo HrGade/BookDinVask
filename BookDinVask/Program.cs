@@ -4,6 +4,7 @@ namespace BookDinVask
     {
         public static void Main(string[] args)
         {
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
@@ -29,6 +30,8 @@ namespace BookDinVask
             app.MapRazorPages();
 
             app.Run();
+
+
         }
     }
 }
